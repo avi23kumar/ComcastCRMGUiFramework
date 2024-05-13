@@ -22,6 +22,11 @@ public class HomePage  {
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+		
+		
+		
+		
+		
 	}
 
 //	Rule 4:Object Encapsulation
