@@ -16,6 +16,7 @@ public class HomePage  {
 	@FindBy(linkText="More") private WebElement morelink;
 	@FindBy(xpath="//img[@ src='themes/softed/images/user.PNG']")private WebElement signoutimg;
 	@FindBy(xpath = "//a[text()='Sign Out']") private WebElement signout;
+	@FindBy(xpath = "//a[text()='Products']") private WebElement product;
 	
 	WebDriver driver;
 	public HomePage(WebDriver driver) {
@@ -27,6 +28,10 @@ public class HomePage  {
 	
 	public WebElement getOrglink() {
 		return orglink;
+	}
+
+	public WebElement getProduct() {
+		return product;
 	}
 
 	public WebElement getContlink() {
